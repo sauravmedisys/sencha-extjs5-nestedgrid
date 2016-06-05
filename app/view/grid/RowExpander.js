@@ -2,7 +2,6 @@ Ext.define('nstgrid.view.grid.RowExpander', {
     extend: 'Ext.grid.Panel',
 
     xtype: 'row-expander-grid',
-    //store: 'Companies',
 	viewConfig    : {
         stripeRows    : true,
         forceFit      : true,
@@ -16,13 +15,13 @@ Ext.define('nstgrid.view.grid.RowExpander', {
     },
 	frame	: true,
 	border	: true,
+	width: 600,
+    height: 300
 	store   : 'nstgrid.store.Companies',
     columns: [
         { text: "configurationType",  dataIndex: 'configurationType', flex: 1},
         { text: "company", dataIndex: 'company'},
         { text: "actor", dataIndex: 'actor'}
-    ],
-    width: 600,
-    height: 300
+    ]
 
 });
