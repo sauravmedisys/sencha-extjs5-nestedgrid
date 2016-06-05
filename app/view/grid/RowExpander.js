@@ -20,7 +20,6 @@ Ext.define('nstgrid.view.grid.RowExpander', {
 	width	: 600,
     height	: 300,
 	width	: '100%',
-	selectRowOnExpand : true,
 	store   : 'nstgrid.store.Companies',
 	
 	plugins: [{
