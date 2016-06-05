@@ -10,6 +10,7 @@ Ext.define('nstgrid.Application', {
 
     stores: [
         // TODO: add global / shared stores here
+		'nstgrid.store.Companies'
     ],
     
     launch: function () {
