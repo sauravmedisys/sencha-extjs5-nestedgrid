@@ -16,7 +16,7 @@ Ext.define('nstgrid.view.grid.RowExpander', {
 	frame	: true,
 	border	: true,
 	width: 600,
-    height: 300
+    height: 300,
 	store   : 'nstgrid.store.Companies',
     columns: [
         { text: "configurationType",  dataIndex: 'configurationType', flex: 1},
