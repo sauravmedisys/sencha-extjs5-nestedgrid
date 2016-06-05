@@ -6,12 +6,18 @@ Ext.define('nstgrid.view.grid.RowExpander', {
 	viewConfig    : {
         stripeRows    : true,
         forceFit      : true,
-        emptyText     : 'No data to display'
+        emptyText     : 'No data to display',
+		listeners     : {
+            viewready   : function(grid, opts){
+                var store    = Ext.data.StoreManager.get('nstgrid.store.Companies');
+				
+            }
+        }
     },
 	frame	: true,
 	border	: true,
+	store   : 'nstgrid.store.Companies',
     columns: [
-        { text: "registerUser", dataIndex: 'registerUser'},
         { text: "configurationType",  dataIndex: 'configurationType', flex: 1},
         { text: "company", dataIndex: 'company'},
         { text: "actor", dataIndex: 'actor'}
