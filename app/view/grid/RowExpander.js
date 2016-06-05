@@ -3,14 +3,20 @@ Ext.define('nstgrid.view.grid.RowExpander', {
 
     xtype: 'row-expander-grid',
     //store: 'Companies',
-
+	viewConfig    : {
+        stripeRows    : true,
+        forceFit      : true,
+        emptyText     : 'No data to display'
+    },
+	frame	: true,
+	border	: true,
     columns: [
-        { text: "registerUser", flex: 1, dataIndex: 'registerUser'},
-        { text: "configurationType",  dataIndex: 'configurationType'},
+        { text: "registerUser", dataIndex: 'registerUser'},
+        { text: "configurationType",  dataIndex: 'configurationType', flex: 1},
         { text: "company", dataIndex: 'company'},
         { text: "actor", dataIndex: 'actor'}
     ],
     width: 600,
-    height: 600
+    height: 300
 
 });

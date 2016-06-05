@@ -24,14 +24,8 @@ Ext.define('nstgrid.view.main.Main', {
     bodyPadding: 10,
 
     items: [{
-		xtype:'textfield',
-        allowBlank: false,
-        fieldLabel: 'User ID',
-        name: 'user',
-        emptyText: 'user id'
-    },{
 		xtype: 'row-expander-grid',
 		width: 600,
-		height: 600
+		height: 300
     }]
 });
