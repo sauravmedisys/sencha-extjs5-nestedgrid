@@ -12,7 +12,10 @@ Ext.define('nstgrid.view.grid.RowExpander', {
             viewready   : function(grid, opts){
                 var store    = Ext.data.StoreManager.get('nstgrid.store.Companies');
 				
-            }
+            },
+			expandbody: function(rowNode, record, expandNode) {
+				console.log('expanded row '+ record);
+			}
         }
     },
 	frame	: true,
@@ -22,16 +25,27 @@ Ext.define('nstgrid.view.grid.RowExpander', {
 	width	: '100%',
 	store   : 'nstgrid.store.Companies',
 	
-	plugins: [{
-        ptype: 'rowexpander',
-        rowBodyTpl : new Ext.XTemplate(
-            '<p><b>Company:</b> {company}</p>',
-            '<p><b>Actor:</b> {actor}</p>')
+	
+	plugins	: [{
+        ptype	: 'rowexpander',
+        /* rowBodyTpl : new Ext.XTemplate(
+            '<p><b>Company:</b> {name}</p>',
+            '<p>{change:this.expanded}</p>'
+        ), */
+		rowBodyTpl: new Ext.XTemplate('<p>&nbsp;</p>')
     }],
-	columns: [
+	columns	: [
 		{ text: "company",flex: 1, dataIndex: 'company'},
 		{ text: "configurationType",  dataIndex: 'configurationType'},
 		{ text: "actor", dataIndex: 'actor'}
-	]
+	]/* ,
+	listeners	: {
+		expandbody: function(rowNode, record, expandRowNode) {
+			console.log('hello ');
+		},
+		collapsebody: function(rowNode, record, expandRowNode) {
+			console.log('hello ');
+		}
+	} */
 
 });
