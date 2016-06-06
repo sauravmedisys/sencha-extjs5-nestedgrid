@@ -6,26 +6,22 @@
  * TODO - Replace this content of this view to suite the needs of your application.
  */
 Ext.define('nstgrid.view.main.Main', {
-	extend: 'Ext.panel.Panel',
-    requires: [
+	extend		: 'Ext.panel.Panel',
+    requires	: [
         'nstgrid.view.main.MainController',
         'nstgrid.view.main.MainModel',
 		'nstgrid.view.grid.RowExpander'
     ],
-    xtype: 'app-main',
-    
-    controller: 'main',
-    viewModel: {
-        type: 'main'
+    xtype		: 'app-main',
+	title		: 'Nested Grid',
+    frame		:true,
+	border		: true,
+    bodyPadding	: 10,
+    controller	: 'main',
+    viewModel	: {
+        type	: 'main'
     },
-	title: 'Nested Grid',
-    frame:true,
-	border: true,
-    bodyPadding: 10,
-
-    items: [{
-		xtype: 'row-expander-grid',
-		width: 600,
-		height: 300
+    items		: [{
+		xtype	: 'row-expander-grid'
     }]
 });
