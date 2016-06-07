@@ -3,8 +3,9 @@ Ext.define('nstgrid.view.grid.ThirdExpander', {
 	alias       : 'widget.thirdexpander',
 	xtype		: 'thirdexpander',
 	requires	: [
-      
+		'nstgrid.view.grid.FourthExpander'
     ],
+	hideHeaders	: false,
 	frame		: true,
 	border		: true,
 	width		: '100%',
@@ -21,17 +22,8 @@ Ext.define('nstgrid.view.grid.ThirdExpander', {
             },
 			expandbody		: function(rowNode, record, eNode) {
 				var element = Ext.get(eNode).down('.ux-row-expander-box');
-				var grid = Ext.create('Ext.grid.Panel', {
-						hideHeaders: true,
-						frame		: false,
-						border		: false,
-						store		: this.store,
-						columns		: [
-							{ text: "company",flex: 1, dataIndex: 'company'},
-							{ text: "configurationType",  dataIndex: 'configurationType'},
-							{ text: "actor", dataIndex: 'actor'}
-						]
-					});
+				//static layer Nested Grid
+				var grid = Ext.create('widget.fourthexpander');
 				element.swallowEvent(['click', 'mousedown', 'mouseup', 'dblclick'], true);
 				grid.render(element);
 			},

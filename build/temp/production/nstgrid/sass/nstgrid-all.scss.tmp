@@ -718,6 +718,7 @@ $include-extthemeneptune-toolbar-toolbar: true;
 $include-nstgrid-application: true;
 $include-nstgrid-model-company: true;
 $include-nstgrid-store-companies: true;
+$include-nstgrid-view-grid-fourthexpander: true;
 $include-nstgrid-view-grid-rowexpander: true;
 $include-nstgrid-view-grid-secondexpander: true;
 $include-nstgrid-view-grid-thirdexpander: true;
