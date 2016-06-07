@@ -1,13 +1,13 @@
-Ext.define('nstgrid.view.grid.SecondGrid', {
+Ext.define('nstgrid.view.grid.SecondExpander', {
     extend		: 'Ext.grid.Panel',
-	alias         : 'widget.secondgrid',
-	xtype		: 'secondgrid',
+	alias       : 'widget.secondexpander',
+	xtype		: 'secondexpander',
 	requires	: [
       
     ],
 	frame		: true,
 	border		: true,
-	width		: 800,
+	width		: '100%',
 	height		: 500,
 	store   	: 'nstgrid.store.Companies',
 	viewConfig  : {
