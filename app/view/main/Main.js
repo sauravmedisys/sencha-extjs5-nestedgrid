@@ -22,6 +22,6 @@ Ext.define('nstgrid.view.main.Main', {
         type	: 'main'
     },
     items		: [{
-		xtype	: 'row-expander-grid'
+		xtype	: 'rowexpandergrid'
     }]
 });

@@ -1,13 +1,13 @@
-Ext.define('nstgrid.view.grid.RowExpander', {
+Ext.define('nstgrid.view.grid.SecondGrid', {
     extend		: 'Ext.grid.Panel',
-	alias       : 'widget.rowexpandergrid',
-	xtype		: 'rowexpandergrid',
+	alias         : 'widget.secondgrid',
+	xtype		: 'secondgrid',
 	requires	: [
-		'nstgrid.view.grid.SecondGrid'
+      
     ],
 	frame		: true,
 	border		: true,
-	width		: '100%',
+	width		: 800,
 	height		: 500,
 	store   	: 'nstgrid.store.Companies',
 	viewConfig  : {
@@ -21,8 +21,16 @@ Ext.define('nstgrid.view.grid.RowExpander', {
             },
 			expandbody		: function(rowNode, record, eNode) {
 				var element = Ext.get(eNode).down('.ux-row-expander-box');
-				//dynamic nested Grid 
-				var grid = Ext.create('widget.rowexpandergrid');
+				var grid = Ext.create('Ext.grid.Panel', {
+						frame		: false,
+						border		: false,
+						store		: this.store,
+						columns		: [
+							{ text: "company",flex: 1, dataIndex: 'company'},
+							{ text: "configurationType",  dataIndex: 'configurationType'},
+							{ text: "actor", dataIndex: 'actor'}
+						]
+					});
 				element.swallowEvent(['click', 'mousedown', 'mouseup', 'dblclick'], true);
 				grid.render(element);
 			},
