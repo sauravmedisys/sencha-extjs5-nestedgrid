@@ -22,6 +22,10 @@ Ext.define('nstgrid.view.main.Main', {
         type	: 'main'
     },
     items		: [{
-		xtype	: 'rowexpandergrid'
+		xtype	: 'formvalidate',
+		height        : 60
+	},{
+		xtype	: 'rowexpandergrid',
+		margin  : '4 0 0 0'
     }]
 });
