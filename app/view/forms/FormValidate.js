@@ -32,7 +32,6 @@ Ext.define('nstgrid.view.forms.FormValidate' , {
 				name          : 'requestNo',
 				reference     : 'requestNo',
 				regex         : /^[A-Za-z\s]{1,}[\.]{0,1}[A-Za-z\s]{0,}$/,
-				regexText     : 'Alpha Charecter Only',
 				width         : 90
 			},{
 				fieldLabel    : 'Patient ID',
