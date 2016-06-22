@@ -1,0 +1,131 @@
+astm_workspace
+
+	medisys-astm-entity
+	medisys-astm-parser
+	medisys-astm-persis
+	medisys-astm-server
+	medisys-astm-utlity
+	medisys-astm-webapp
+	medisys-boot-filter
+	
+boot_workspace
+
+	medisys-boot-filter
+	medisys-boot-instal
+	medisys-boot-jproxy
+	medisys-boot-launch
+	medisys-boot-py2exe
+	medisys-boot-stmenu
+	medisys-boot-webapp
+	
+comn_workspace
+
+	medisys-comn-cheque
+	medisys-comn-enumer
+	medisys-comn-filter
+	medisys-comn-spring
+	medisys-comn-themes
+	medisys-comn-utlity
+
+dbms_workspace
+	
+	medisys-dbms-filter
+	medisys-dbms-flyway
+	medisys-dbms-h2dbms
+	medisys-dbms-hsqldb
+	medisys-dbms-jdbcmi
+	medisys-dbms-migrat
+	medisys-dbms-mysqld
+	medisys-dbms-oracle
+	medisys-dbms-pgsqld
+   
+ecma_workspace
+
+	medisys-ecma-ant.js
+	medisys-ecma-filter
+	medisys-ecma-msc.js
+	medisys-ecma-script
+
+itis_workspace 
+
+	medisys-itis-entity
+	medisys-itis-filter
+	medisys-itis-parent
+	medisys-itis-parser
+	medisys-itis-persis
+	medisys-itis-server
+	medisys-itis-utlity
+	medisys-itis-webapp
+
+java_workspace 
+
+	medisys-java-winx64
+	medisys-java-winx86
+
+labs_workspace
+
+	medisys-labs-entity
+	medisys-labs-filter
+	medisys-labs-msc.js
+	medisys-labs-msccss
+	medisys-labs-parser
+	medisys-labs-persis
+	medisys-labs-script
+	medisys-labs-server
+	medisys-labs-static
+	medisys-labs-ui.lab
+	medisys-labs-ui.log
+	medisys-labs-utlity
+	medisys-labs-webapp
+
+mllp_workspace
+
+	medisys-mllp-entity
+	medisys-mllp-parser
+	medisys-mllp-persis
+	medisys-mllp-server
+	medisys-mllp-utlity
+	medisys-mllp-webapp
+  
+mspn_workspace
+
+	medisys-mspn-entity
+	medisys-mspn-parser
+	medisys-mspn-persis
+	medisys-mspn-server
+	medisys-mspn-utlity
+	medisys-mspn-webapp
+
+pjce_workspace
+
+	medisys-pacs-entity
+	medisys-pacs-parser
+	medisys-pacs-persis
+	medisys-pacs-server
+	medisys-pacs-utlity
+	medisys-pacs-webapp
+	
+pacs_workspace 
+
+	medisys-pjce-guiext
+	
+rxtx_woekspace
+	
+	medisys-rxtx-comapi
+	medisys-rxtx-linx64
+	medisys-rxtx-linx86
+	medisys-rxtx-macx64
+	medisys-rxtx-macx86
+	medisys-rxtx-winx64
+	medisys-rxtx-winx86
+
+xlab_workspace
+
+	medisys-xlab-entity
+	medisys-xlab-filter
+	medisys-xlab-parser
+	medisys-xlab-persis
+	medisys-xlab-server
+	medisys-xlab-utlity
+	medisys-xlab-webapp
+	medisys-xlab-xdsapp

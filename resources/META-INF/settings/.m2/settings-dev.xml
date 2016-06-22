@@ -1,0 +1,46 @@
+<settings xmlns="http://maven.apache.org/POM/4.0.0"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <!-- localRepository
+   | The path to the local repository maven will use to store artifacts.
+   |
+   | Default: ${user.home}/.m2/repository
+  <localRepository>/path/to/local/repo</localRepository>
+  -->
+  <localRepository>D:\var\www\maven\maven2\localrepo\</localRepository>
+  
+  <servers>
+	<server>
+		<id>medisys.releases</id>
+		<configuration>
+			<httpHeaders>
+				<property>
+					<name>Authorization</name>
+					<value>Basic c2hhaGVkOm1lZGlzeXM==</value>
+				</property>
+			</httpHeaders>
+		</configuration>
+	</server>
+	<server>
+		<id>medisys.snapshots</id>
+		<configuration>
+			<httpHeaders>
+				<property>
+					<name>Authorization</name>
+					<value>Basic c2hhaGVkOm1lZGlzeXM==</value>
+				</property>
+			</httpHeaders>
+		</configuration>
+	</server>
+	<server>
+		<id>medisys.releases.ftp</id>
+		<username>maven@medisys.com.sa</username>
+		<password>{qRagDtC5UN8He9NiVbrKXJyxYXClSXJd3SNpoU/ol1I=}</password>
+		</server>
+	<server>
+		<id>medisys.snapshots.ftp</id>
+		<username>maven@medisys.com.sa</username>
+		<password>{qRagDtC5UN8He9NiVbrKXJyxYXClSXJd3SNpoU/ol1I=}</password>
+	</server>
+  </servers>
+</settings>
